@@ -1,0 +1,17 @@
+import random
+cases = int(input("Combien de cases voulez-vous pour cette liste ?\n"))
+myTable=[]
+for i in range (cases):
+   genaratednumber = random.randint(1, 10)
+   myTable.append(genaratednumber)
+print(myTable)
+permut1 = int(input("Indice de la première valeur à permuter\n"))
+while (permut1 > cases-1 or permut1 < 0):
+   permut1 = int(input("permut1 inadapté, choisissez un autre chiffre.\n"))
+permut2 = int(input("Indice de la seconde valeur à permuter\n"))
+while (permut2 > cases-1 or permut2 < 0):
+   permut2 = int(input("permut2 inadapté, choisissez un autre chiffre.\n"))
+stock = myTable[permut1]
+myTable[permut1] = myTable[permut2]
+myTable[permut2] = stock
+print(myTable)

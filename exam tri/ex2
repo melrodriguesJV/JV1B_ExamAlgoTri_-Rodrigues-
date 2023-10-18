@@ -1,0 +1,13 @@
+import random
+cases = int(input("Combien de cases voulez-vous pour cette liste ?\n"))
+myTable=[]
+for i in range (cases):
+   genaratednumber = random.randint(1, 10)
+   myTable.append(genaratednumber)
+print(myTable)
+for j in range (cases):
+   if (myTable[j-1] > myTable[j]):
+      stock = myTable[j-1]
+      myTable[j-1] = myTable[j]
+      myTable[j] = stock
+print(myTable)

@@ -1,0 +1,15 @@
+Examen python : Tri à bulles
+Rodrigues Mel
+JV1B
+
+
+
+
+
+Ex 4 : La « lenteur » du tri à bulles est due à son procédé de tri : à chaque itération il place le plus grand facteur de la liste en dernière position, 
+     ce doit être effectué plusieurs fois avant d’avoir une liste de facteurs rangés par ordre croissant. La ré-itération du procédé de permutation de 
+     facteurs prend bien plus de temps qu’un programme de tri qui peut faire un classement croissant de facteurs en une seule et unique itération.
+       Techniquement, il est possible de déterminer le temps que prendra le programme pour effectuer son tri. Dans le cas où les facteurs de la liste sont 
+     connus, il suffit de déterminer en combien d’itérations le programme pourra effectuer son tri selon la position des valeurs les plus élevées dans la 
+     liste. Dans le cas d’une liste à facteurs déterminés aléatoirement, il faudrait en premier lieu afficher la liste avant que le programme effectue le 
+     tri pour calculer les estimations.
